@@ -25,7 +25,7 @@ body {
 .bar3 {
     width: 17px;
     height: 2px;
-    background-color: #E84A5F;
+    background-color: #706072;
     margin: 3px 0;
 }
 
@@ -120,7 +120,7 @@ body {
     float: right;
     width: 145px;
     height: auto;
-/*    margin-top: 5px;*/
+    margin-top: 2px;
     margin-right: 5px;
 }
 
