@@ -25,7 +25,7 @@ window.onload = function () {
         background.style.cursor = "pointer";
         sideNav.style.width = "280px";
         logo.style.opacity = "1";
-        background.style.zIndex = "1";
+        background.style.zIndex = "-1";
         background.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
         token = true;
     });
