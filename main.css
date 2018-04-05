@@ -163,6 +163,7 @@ body {
 .sub-name {
     color: white;
     margin-top: 0px;
+    margin-bottom: 36px;
     font-size: 2.2em;
     font-weight: 600;
     text-transform: uppercase;
@@ -170,5 +171,24 @@ body {
 
 .header-content {
     color: white;
+    margin: 0px;
+    margin-top: 6px
 
+}
+
+.header-hr {
+    width: 30px;
+    justify-self: start;
+    margin: 0px;
+    height: 3px;
+    color: white;
+    background-color: white;
+
+}
+
+.header-img {
+    border-radius: 50%;
+    width: 100px;
+    height: auto;
+    margin: 0px;
 }
