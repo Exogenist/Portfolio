@@ -111,17 +111,17 @@ body {
 }
 
 .wx {
-  position: absolute;
-  left: 532px;
-  top: 213px;
-  width: 588px;
-  height: 367px;
-  z-index: 2;
+    position: absolute;
+    left: 532px;
+    top: 213px;
+    width: 588px;
+    height: 367px;
+    z-index: 2;
     background-color: black;
 }
 
 
-.logo{
+.logo {
     float: right;
     width: 145px;
     height: auto;
@@ -140,7 +140,7 @@ body {
     height: 100vh;
     background-image: url(assets/fireworks.png);
     background-size: cover;
-    grid-template-rows:  100%;
+    grid-template-rows: 100%;
     display: grid;
 }
 
@@ -148,19 +148,27 @@ body {
     justify-self: center;
     align-self: center;
     width: 70%;
-    color: white;
-    text-transform: uppercase;
+
+
 }
 
 .name {
-/*
-    justify-self: center;
-    align-self: center;
-    width: 70%;
     color: white;
+    margin-bottom: 0px;
+    font-size: 1.7em;
+    opacity: 0.8;
     text-transform: uppercase;
-*/
 }
 
-.sub-name
+.sub-name {
+    color: white;
+    margin-top: 0px;
+    font-size: 2.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 
+.header-content {
+    color: white;
+
+}
