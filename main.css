@@ -442,8 +442,17 @@ body {
 
 .apps {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 2em;
+/*    width: 80%;*/
+    grid-template-columns: 1fr 1fr 1fr;
+
+/*    grid-gap: 10%;*/
+/*        justify-self: center;*/
+/*    align-self: center;*/
+}
+
+.apps div {
+    padding-right: 10px;
+    padding-top: 10px;
 }
 
 .apps-img {
@@ -454,7 +463,7 @@ body {
 .thumb-title {
     margin: 0px;
     font-weight: 600;
-    font-size: 0.8em;
+    font-size: 0.55em;
     text-align: center;
     padding: 0px;
 }
