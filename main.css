@@ -2,6 +2,7 @@ body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
     color: #808080;
+    background-color: rgb(237, 237, 242);
 }
 
 #nav {
@@ -316,6 +317,14 @@ body {
 
 .about-me {
     display: grid;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 17px;
+    border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    padding-bottom: 20px;
 }
 
 .about-me-content {
@@ -346,21 +355,28 @@ body {
 
 .icon-tweak {
     margin-right: 10px;
-    margin-bottom: 38px;
+    margin-bottom: 20px;
     margin-top: 17px;
 }
 
 .skills {
     display: grid;
     color: #706072;
-    margin-bottom: 31px
+    padding-bottom: 30px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    background-color: white;
+        margin-left: 10px;
+    margin-right: 10px;
+
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 .skills-content {
     justify-self: center;
     align-self: center;
     width: 80%;
-
 }
 
 * {
@@ -415,7 +431,13 @@ body {
 
 .web-apps {
     display: grid;
-/*    background-color: darkgrey;*/
+    background-color: white;
+        margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 17px;
+    border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 .web-apps-content {
@@ -432,12 +454,12 @@ body {
 
 .web-app-adjust {
 /*    text-align: center;*/
-    margin-top: 0px;
+    margin-top: 20px;
 }
 
 .app-adj {
     width: 68%;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
 }
 
 .apps {
