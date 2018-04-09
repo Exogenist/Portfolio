@@ -415,15 +415,17 @@ body {
 
 .web-apps {
     display: grid;
-    background-color:
+/*    background-color: darkgrey;*/
 }
 
 .web-apps-content {
     justify-self: center;
     align-self: center;
     display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto;
+/*
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+*/
     width: 80%;
 
 }
@@ -433,8 +435,11 @@ body {
     margin-top: 0px;
 }
 
-.apps-img {
-    justify-self: right;
-    width: 60px;
-    margin-top: 9px;
+.app-adj {
+    width: 68%;
+    margin-bottom: 0px;
+}
+
+.btn-position {
+    margin-right: 145px;
 }
