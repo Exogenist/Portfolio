@@ -437,10 +437,24 @@ body {
 
 .app-adj {
     width: 68%;
-    margin-bottom: 0px;
+    margin-bottom: 32px;
 }
 
-.btn-adj {
-    margin-top: 10px;
-    margin-right: 0px;
+.apps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2em;
+}
+
+.apps-img {
+    width: 100%;
+    height: auto;
+}
+
+.thumb-title {
+    margin: 0px;
+    font-weight: 600;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 0px;
 }
