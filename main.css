@@ -438,6 +438,8 @@ body {
     border-radius: 5px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .web-apps-content {
@@ -488,4 +490,12 @@ body {
     font-size: 0.55em;
     text-align: center;
     padding: 0px;
+}
+
+.code-img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
 }
