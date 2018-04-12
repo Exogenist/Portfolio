@@ -506,8 +506,9 @@ body {
 .projects-title {
     background-image: url(assets/code.jpg);
     background-size: 100% auto;
-    height: 180px;
+    height: 175%;
     text-align: center;
+    background-repeat: no-repeat;
 }
 
 .projects-title h1 {
