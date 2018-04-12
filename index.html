@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="hoverfx.css">
 
     <link rel="stylesheet" href="main.css">
+
     <title>Exogenist.me</title>
 </head>
 
@@ -48,7 +48,7 @@
         </nav>
     </div>
 
-    <!--
+<!--
     +++++++++++++++++++++++++++++++++++++
     ++++++++++ HEADER +++++++++++++++++++
     +++++++++++++++++++++++++++++++++++++
@@ -76,12 +76,12 @@
     ++++++++++ About me +++++++++++++++++
     +++++++++++++++++++++++++++++++++++++
 -->
-    <div class="about-me">
-        <div class="about-me-content">
+    <div class="content">
+        <div class="content-container">
             <h1 class="main-title"><span class="title-fx">A</span>bout Me</h1>
-            <h4 class="about-me-sub">Front-end full stack developer</h4>
+            <h4 class="sub-header">Front-end full stack developer</h4>
 
-            <p class="about-me-info">I am a front end web developer competent in areas such as responsive web design and web-apps built with javascript. This site is an example of the application of such competencies. My philophosy is to innovate, make it beautiful and robust. As such my values are in object oriented and functional programming techniques in javascript to achieve rich results in application logic and design. </p>
+            <p>I am a front end web developer competent in areas such as responsive web design and web-apps built with javascript. This site is an example of the application of such competencies. My philophosy is to innovate, make it beautiful and robust. As such my values are in object oriented and functional programming techniques in javascript to achieve rich results in application logic and design. </p>
             <i class="icon-tweak fab fa-facebook-f"></i>
             <i class="icon-tweak fab fa-twitter"></i>
             <i class="icon-tweak fab fa-instagram"></i>
@@ -125,11 +125,11 @@
     ++++++++++ webapps ++++++++++++++++++
     +++++++++++++++++++++++++++++++++++++
 -->
-    <div class="web-apps">
-        <div class="web-apps-content">
+    <div class="content">
+        <div class="content-container">
 
-            <h1 class="main-title web-app-adjust"><span class="title-fx">W</span>eb apps</h1>
-            <h4 class="about-me-sub app-adj">Apps I've developed</h4>
+            <h1 class="main-title"><span class="title-fx">W</span>eb apps</h1>
+            <h4 class="sub-header">Apps I've developed</h4>
 
             <div class="apps">
                 <div>
@@ -165,10 +165,10 @@
     ++++++++++ projects ++++++++++++++++++
     +++++++++++++++++++++++++++++++++++++
 -->
-    <div class="web-apps">
+    <div class="content">
 
         <div class="projects-title">
-            <h1 class="main-title web-app-adjust"><span class="title-fx">P</span>rojects</h1>
+            <h1 class="main-title"><span class="title-fx">P</span>rojects</h1>
             <div class="projects-nav">
                 <h4>music</h4>
                 <h4>abby's</h4>
@@ -178,23 +178,23 @@
 
 
 
-        <div class="web-apps-content">
+        <div class="content-container">
             <div class="container-fluid soundcloud" id="Projects">
                 <div class="container">
-                    <h1 class="upperCase">Listen to My Music</h1>
+                    <h1 class="sub-header">Listen to My Music</h1>
                     <p>Don't forget to follow me on soundcloud.</p>
                     <hr>
                     <div class="row">
                         <div class="col-sm-4">
-                            <h3>Chasing Dreams</h3>
+                            <h5>Chasing Dreams</h5>
                             <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/169419767&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
                         </div>
                         <div class="col-sm-4">
-                            <h3>Vibrance</h3>
+                            <h5>Vibrance</h5>
                             <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/159400826&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
                         </div>
                         <div class="col-sm-4">
-                            <h3>Wha Mi Seh</h3>
+                            <h5>Wha Mi Seh</h5>
                             <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/147759553&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
                         </div>
                     </div>
@@ -209,26 +209,38 @@
     ++++++++++ Contact me ++++++++++++++++++
     +++++++++++++++++++++++++++++++++++++
 -->
-    <div class="web-apps">
-        <div class="web-apps-content">
-             <h1 class="main-title"><span class="title-fx">C</span>ontact Me</h1>
+    <div class="content">
+        <div class="content-container">
+            <h1 class="main-title"><span class="title-fx">C</span>ontact Me</h1>
 
-             <form name="contactForm" method="post" action="/sys/message.php">
-                 <input type="text" placeholder="First Name" name="first_name">                 <input type="text" placeholder="Last Name" name="last_name">
-                 <input type="text" placeholder="somone@email.com" name="email">
-                 <input type="text" placeholder="(555)-555-5555" name="telephone">
-                 <textarea name="comments" id="comment" maxlength='1000' cols="25" rows="4"></textarea>
+            <form name="contactForm" method="post" action="/sys/message.php">
+                <input type="text" placeholder="First Name" name="first_name"> <input type="text" placeholder="Last Name" name="last_name">
+                <input type="text" placeholder="somone@email.com" name="email">
+                <input type="text" placeholder="(555)-555-5555" name="telephone">
+                <textarea name="comments" id="comment" maxlength='1000' cols="25" rows="4"></textarea>
 
-                 <input class='m-btn-primary' type='submit' value='Submit'>
-             </form>
+                <input class='m-btn-primary' type='submit' value='Submit'>
+            </form>
         </div>
     </div>
+    <!--    END-->
+
+    <!--
+    +++++++++++++++++++++++++++++++++++++
+    ++++++++++ Footer +++++++++++++++++++
+    +++++++++++++++++++++++++++++++++++++
+-->
 
     <div>
 
     </div>
 
 </body>
+<!--  jquery-->
+   <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>

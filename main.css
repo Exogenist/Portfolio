@@ -93,14 +93,6 @@ body {
     padding: 0px;
 }
 
-.sideNavLogo h1 {
-    margin-top: 6px;
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    color: darkgray;
-}
-
 .overlay {
     /*z-index: 1;*/
     width: 100vw;
@@ -112,16 +104,6 @@ body {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     /*    z-index: 1;*/
-}
-
-.wx {
-    position: absolute;
-    left: 532px;
-    top: 213px;
-    width: 588px;
-    height: 367px;
-    z-index: 2;
-    background-color: black;
 }
 
 
@@ -160,23 +142,6 @@ body {
  * animation text-pop-up-top
  * ----------------------------------------
  */
-
-@-webkit-keyframes text-pop-up-top {
-    0% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        -webkit-transform-origin: 50% 50%;
-        transform-origin: 50% 50%;
-        text-shadow: none;
-    }
-    100% {
-        -webkit-transform: translateY(-50px);
-        transform: translateY(-50px);
-        -webkit-transform-origin: 50% 50%;
-        transform-origin: 50% 50%;
-        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
-    }
-}
 
 .text-shadow-drop-bottom {
     -webkit-animation: text-shadow-drop-bottom 0.6s both;
@@ -275,6 +240,7 @@ body {
     width: 100px;
     height: auto;
     margin: 0px;
+    margin-top: 30px
 }
 
 /*buttons*/
@@ -315,29 +281,30 @@ body {
     outline: 0;
 }
 
-.about-me {
+.content {
     display: grid;
     background-color: white;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 17px;
+
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     padding-bottom: 20px;
 }
 
-.about-me-content {
+.content-container {
     justify-self: center;
     align-self: center;
     width: 80%;
 }
 
 .main-title {
-    /*    text-transform: uppercase;*/
     color: #dcdee2;
-    font-size: 1.7em;
+    font-size: 1.9em;
     margin-bottom: 0px;
+    font-weight: 700;
 }
 
 .title-fx {
@@ -346,31 +313,19 @@ body {
     text-decoration: underline;
 }
 
-.about-me-sub {
+.sub-header {
     color: #706072;
     text-transform: uppercase;
-    width: 50%;
-    margin-top: 0px;
+    width: 45%;
+    margin-top: 7px;
+    font-size: 1em;
+    font-weight: 600;
 }
 
 .icon-tweak {
     margin-right: 10px;
     margin-bottom: 20px;
     margin-top: 17px;
-}
-
-.skills {
-    display: grid;
-    color: #706072;
-    padding-bottom: 30px;
-    padding-top: 20px;
-    margin-bottom: 10px;
-    background-color: white;
-    margin-left: 10px;
-    margin-right: 10px;
-
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
 .skills-content {
@@ -429,41 +384,6 @@ body {
     background-color: #706072;
 }
 
-.web-apps {
-    display: grid;
-    background-color: white;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 17px;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}
-
-.web-apps-content {
-    justify-self: center;
-    align-self: center;
-    display: grid;
-    /*
-    grid-template-rows: auto auto auto;
-    grid-template-columns: auto;
-*/
-    width: 80%;
-
-}
-
-.web-app-adjust {
-    /*    text-align: center;*/
-    margin-top: 20px;
-}
-
-.app-adj {
-    width: 68%;
-    margin-bottom: 20px;
-}
-
 .apps {
     display: grid;
     /*    width: 80%;*/
@@ -492,17 +412,6 @@ body {
     padding: 0px;
 }
 
-.code-img {
-    width: 70%;
-    height: auto;
-
-}
-
-.responsive {
-    width: 100%;
-    height: auto;
-}
-
 .projects-title {
     background-image: url(assets/code.jpg);
     background-size: 100% auto;
@@ -513,7 +422,8 @@ body {
 
 .projects-title h1 {
     color: white;
-    margin-top: 49px;
+/*    margin-top: 49px;*/
+    margin-bottom: 14px;
 }
 
 .projects-title span {
@@ -523,6 +433,7 @@ body {
 .projects-nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 60px;
 }
 
 .projects-nav h4 {
