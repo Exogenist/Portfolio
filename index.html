@@ -211,7 +211,16 @@
 -->
     <div class="web-apps">
         <div class="web-apps-content">
+             <h1 class="main-title"><span class="title-fx">C</span>ontact Me</h1>
 
+             <form name="contactForm" method="post" action="/sys/message.php">
+                 <input type="text" placeholder="First Name" name="first_name">                 <input type="text" placeholder="Last Name" name="last_name">
+                 <input type="text" placeholder="somone@email.com" name="email">
+                 <input type="text" placeholder="(555)-555-5555" name="telephone">
+                 <textarea name="comments" id="comment" maxlength='1000' cols="25" rows="4"></textarea>
+
+                 <input class='m-btn-primary' type='submit' value='Submit'>
+             </form>
         </div>
     </div>
 
