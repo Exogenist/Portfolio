@@ -40,4 +40,6 @@ window.onload = function () {
             background.style.zIndex = "-1";
         }
     });
+
+    $('.header').parallaxie();
 }

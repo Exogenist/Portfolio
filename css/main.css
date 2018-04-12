@@ -121,10 +121,11 @@ body {
 }
 
 .header {
-    background-color: brown;
+    background-color: #2A363B;
     width: 100%;
     height: 100vh;
-    background-image: url(assets/fireworks.png);
+    min-height: 460px;
+    background-image: url(/assets/fireworks.png);
     background-size: cover;
     grid-template-rows: 100%;
     display: grid;
@@ -413,7 +414,7 @@ body {
 }
 
 .projects-title {
-    background-image: url(assets/code.jpg);
+    background-image: url(/assets/code.jpg);
     background-size: 100% auto;
     height: 175%;
     text-align: center;
