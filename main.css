@@ -519,3 +519,15 @@ body {
 .projects-title span {
     color: white;
 }
+
+.projects-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.projects-nav h4 {
+    margin-top: 0px;
+    color: white;
+    opacity: 0.8;
+    font-size: 0.7em;
+}
