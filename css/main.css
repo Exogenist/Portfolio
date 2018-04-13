@@ -542,13 +542,13 @@ textarea {
 
     /*    ABOUT ME*/
     .progress-container {
-        width: 80%;
+        width: 100%;
     }
 
     /*    WEB APPS*/
     .apps {
         grid-gap: 13%;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     .apps-img {
         width: 100%;
@@ -573,6 +573,16 @@ textarea {
         height: 230px;
         margin-bottom: 40px;
 
+    }
+
+    .layout-about-me {
+        display: grid;
+        grid-template-columns: 4fr 6fr;
+    }
+
+    .layout-web-apps {
+        display: grid;
+        grid-template-columns: 6fr 4fr;
     }
 
 }
