@@ -419,9 +419,21 @@ body {
         margin-top: 11%;
     }
 
-.projects-title {
-    background-image: url(/assets/code.jpg);
+.intrelude {
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    background-image: url("/assets/photo%20challenge.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+/*    opacity: 0.7;*/
+    margin-top: 45px;
+}
+
+.projects-title {
+    background-image: url(/assets/bckgrd.jpg);
+    background-size: cover;
+/*    background-color: #706072;*/
     height: 170px;
     ;
     display: grid;
@@ -592,6 +604,17 @@ textarea {
         grid-template-columns: 6fr 4fr;
         grid-gap: 10%;
     }
-
-
 }
+
+@media screen and (min-width: 960px) {
+    .content {
+        width: 960px;
+        margin: auto;
+        margin-top: 45px;
+    }
+
+    .music-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px
+    }

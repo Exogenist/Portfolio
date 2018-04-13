@@ -41,5 +41,5 @@ window.onload = function () {
         }
     });
 
-//    $('.header').parallaxie();
+    $('.header').parallaxie();
 }
