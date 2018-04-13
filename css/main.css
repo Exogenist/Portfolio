@@ -415,6 +415,9 @@ body {
     text-align: center;
     padding: 0px;
 }
+    .web-apps-content {
+        margin-top: 11%;
+    }
 
 .projects-title {
     background-image: url(/assets/code.jpg);
@@ -558,6 +561,10 @@ textarea {
     .thumb-title {
         font-size: 1em;
     }
+        .web-apps-content {
+        margin-top: 18%;
+/*        margin-left: 9%;*/
+    }
 
     /*
         PROJECTS
@@ -583,6 +590,8 @@ textarea {
     .layout-web-apps {
         display: grid;
         grid-template-columns: 6fr 4fr;
+        grid-gap: 10%;
     }
+
 
 }
