@@ -123,14 +123,17 @@ body {
 .header {
     background-color: #2A363B;
     width: 100%;
-    height: 100vh;
+
     min-height: 460px;
     background-image: url(/assets/fireworks.png);
     background-size: cover;
     grid-template-rows: 100%;
     display: grid;
     z-index: 21;
+    height: 100vh;
 }
+
+
 
 .header-A {
     justify-self: center;
@@ -241,7 +244,7 @@ body {
     width: 100px;
     height: auto;
     margin: 0px;
-    margin-top: 30px
+    margin-top: 30px;
 }
 
 /*buttons*/
@@ -407,24 +410,30 @@ body {
 
 .thumb-title {
     margin: 0px;
-    font-weight: 600;
-    font-size: 0.55em;
+    font-weight: 200;
+    font-size: 0.75em;
     text-align: center;
     padding: 0px;
 }
 
 .projects-title {
     background-image: url(/assets/code.jpg);
-    background-size: 100% auto;
-    height: 175%;
+    background-size: cover;
+    height: 170px;
+    ;
+    display: grid;
+    /*    height: 175%;*/
     text-align: center;
     background-repeat: no-repeat;
+    margin-bottom: 20px;
 }
 
 .projects-title h1 {
     color: white;
-/*    margin-top: 49px;*/
-    margin-bottom: 14px;
+    justify-self: center;
+    align-self: end;
+    margin-top: 0px;
+    margin-bottom: 2%;
 }
 
 .projects-title span {
@@ -434,12 +443,71 @@ body {
 .projects-nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 60px;
+
+    /*    margin-bottom: 60px;*/
 }
 
 .projects-nav h4 {
     margin-top: 0px;
     color: white;
     opacity: 0.8;
-    font-size: 0.7em;
+    font-size: 70%;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+@media screen and (min-width: 600px) {
+    /*    HEADER*/
+    .header {
+        min-height: 768px;
+    }
+
+    .header-img {
+        width: 170px;
+    }
+    .sub-name {
+        font-size: 3.7em;
+    }
+    .name {
+        font-size: 2em;
+    }
+    .header-hr {
+        width: 70px;
+        height: 13px;
+    }
+
+    /*    ABOUT ME*/
+    .progress-container {
+        width: 80%;
+    }
+
+    /*    WEB APPS*/
+    .apps {
+        grid-gap: 13%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .apps-img {
+        width: 100%;
+        height: auto;
+
+    }
+    .thumb-title {
+        font-size: 1em;
+    }
+
+    /*
+        PROJECTS
+*/
+    .projects-nav h4 {
+        margin-top: 0px;
+        color: white;
+        opacity: 0.8;
+        font-size: 1.3em;
+    }
+
+    .projects-title {
+        height: 230px;
+        margin-bottom: 40px;
+    }
+
 }

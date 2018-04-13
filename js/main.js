@@ -7,8 +7,8 @@ window.onload = function () {
     var background = document.querySelector(".overlay");
     var token = false;
 
-    function closeSide() {
-        event.preventDefault();
+    function closeSide(eve) {
+
         background.style.cursor = "default";
         token = false;
         sideNav.style.width = "0px";
@@ -41,5 +41,5 @@ window.onload = function () {
         }
     });
 
-    $('.header').parallaxie();
+//    $('.header').parallaxie();
 }
