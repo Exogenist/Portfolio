@@ -562,20 +562,24 @@ textarea {
 
     /*    WEB APPS*/
     .apps {
-        grid-gap: 13%;
+        grid-gap: 0%;
         grid-template-columns: 1fr 1fr 1fr;
+        margin-right: 30px;
+        padding: 10
     }
     .apps-img {
         width: 100%;
         height: auto;
+        margin: 0px;
+        padding: 11%;
 
     }
     .thumb-title {
-        font-size: 1em;
+        font-size: 80%;
     }
         .web-apps-content {
         margin-top: 18%;
-/*        margin-left: 9%;*/
+        margin-left: 0%;
     }
 
     /*
@@ -601,8 +605,8 @@ textarea {
 
     .layout-web-apps {
         display: grid;
-        grid-template-columns: 6fr 4fr;
-        grid-gap: 10%;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0%;
     }
         .m-btn-primary {
         min-width: 46px;
