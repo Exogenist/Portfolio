@@ -606,9 +606,9 @@ textarea {
     }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1170px) {
     .content {
-        width: 960px;
+        width: 1170px;
         margin: auto;
         margin-top: 45px;
     }
@@ -619,6 +619,6 @@ textarea {
         grid-gap: 20px
     }
     .header-A {
-        width: 960px;
+        width: 1170px;
     }
 }
