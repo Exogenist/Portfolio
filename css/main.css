@@ -609,6 +609,15 @@ textarea {
         height: 45px;
         padding: 8px 22px;
     }
+        .music-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .music-grid div iframe {
+        height: 230px;
+    }
 }
 
 @media screen and (min-width: 1170px) {
@@ -618,11 +627,7 @@ textarea {
         margin-top: 45px;
     }
 
-    .music-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 20px
-    }
+
     .header-A {
         width: 1170px;
     }
