@@ -42,4 +42,5 @@ window.onload = function () {
     });
 
     $('.header').parallaxie();
+    $('.intrelude').parallaxie();
 }

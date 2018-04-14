@@ -431,9 +431,9 @@ body {
 }
 
 .projects-title {
-    background-image: url(/assets/bckgrd.jpg);
+/*    background-image: url(/assets/bckgrd.jpg);*/
     background-size: cover;
-/*    background-color: #706072;*/
+    background-color: #E84A5F;
     height: 170px;
     ;
     display: grid;
@@ -448,7 +448,7 @@ body {
     justify-self: center;
     align-self: end;
     margin-top: 0px;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
 }
 
 .projects-title span {
@@ -589,8 +589,8 @@ textarea {
     }
 
     .projects-title {
-        height: 230px;
-        margin-bottom: 40px;
+        height: 200px;
+/*        margin-bottom: 40px;*/
 
     }
 
