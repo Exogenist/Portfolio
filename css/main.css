@@ -604,6 +604,11 @@ textarea {
         grid-template-columns: 6fr 4fr;
         grid-gap: 10%;
     }
+        .m-btn-primary {
+        min-width: 46px;
+        height: 45px;
+        padding: 8px 22px;
+    }
 }
 
 @media screen and (min-width: 1170px) {
@@ -620,5 +625,10 @@ textarea {
     }
     .header-A {
         width: 1170px;
+    }
+    .m-btn-primary {
+        min-width: 46px;
+        height: 45px;
+        padding: 8px 22px;
     }
 }
