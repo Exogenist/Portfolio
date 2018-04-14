@@ -618,3 +618,7 @@ textarea {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px
     }
+    .header-A {
+        width: 960px;
+    }
+}
