@@ -9,6 +9,7 @@
 
 (function( $ ){
 
+
     $.fn.parallaxie = function( options ){
 
         var options = $.extend({

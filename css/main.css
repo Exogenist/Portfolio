@@ -41,7 +41,7 @@ body {
     height: 100%;
     width: 0px;
     position: fixed;
-    z-index: 2;
+/*    z-index: -1;*/
     top: 0;
     left: 0;
     background-color: white;
@@ -53,6 +53,7 @@ body {
     -webkit-box-shadow: 6px 2px 2px -2px rgba(0, 0, 0, 0.53);
     -moz-box-shadow: 6px 2px 2px -2px rgba(0, 0, 0, 0.53);
     box-shadow: 2px 2px 2px -2px rgba(0, 0, 0, 0.53);
+/*    display: none;*/
 }
 
 .sidenav a {
@@ -94,7 +95,7 @@ body {
 }
 
 .overlay {
-    /*z-index: 1;*/
+    z-index: -1;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.0);
@@ -130,14 +131,16 @@ body {
     grid-template-rows: 100%;
     display: grid;
     z-index: 21;
-    height: 100vh;
+    height: 100%;
 }
 
 
 
 .header-A {
     justify-self: center;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     width: 70%;
 
 }
@@ -232,10 +235,13 @@ body {
 
 .header-hr {
     width: 30px;
+    text-align: left;
+    /*
+    -ms-justify-self: start;
     justify-self: start;
+*/
     margin: 0px;
-    height: 3px;
-    color: white;
+    height: 4px;
     background-color: white;
 
 }
@@ -450,7 +456,7 @@ body {
     justify-self: center;
     margin: 0px;
     padding: 0px;
-    margin-top: 40px;
+    margin-top: 70px;
     border-radius: 50%;
 }
 
@@ -465,7 +471,7 @@ body {
 
 .intrelude div {
     justify-self: center;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
 }
 
 .adj-fab {
