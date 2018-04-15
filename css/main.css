@@ -139,6 +139,7 @@ body {
     justify-self: center;
     align-self: center;
     width: 70%;
+
 }
 
 /**
@@ -299,10 +300,21 @@ body {
 }
 
 .content-container {
-    justify-self: center;
+    -ms-justify-self: center;
+    justify-self:  center;
     align-self: center;
     width: 80%;
 }
+
+.display {
+    display: grid;
+}
+.alt-container {
+    -ms-justify-self: center;
+    justify-self:  center;
+        width: 80%;
+}
+
 
 .main-title {
     color: #dcdee2;
@@ -631,9 +643,21 @@ textarea {
 
     .layout-about-me {
         display: grid;
+/*        width: 70%;*/
         grid-template-columns: 4fr 6fr;
     }
-
+    .alt-container {
+            width: 100%;
+/*
+        -ms-justify-self: none;
+        justify-self: none;
+*/
+    }
+    .layout-adj {
+        width: 80%;
+        -ms-justify-self: center;
+        justify-self: center;
+    }
     .layout-web-apps {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -664,7 +688,8 @@ textarea {
 
 
     .header-A {
-        width: 1170px;
+        width: 960px;
+/*            padding-left: 30px;*/
     }
     .m-btn-primary {
         min-width: 46px;
@@ -674,4 +699,5 @@ textarea {
     .intrelude-content {
         width: 55%;
     }
+
 }
