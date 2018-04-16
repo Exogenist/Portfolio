@@ -118,7 +118,7 @@ body {
 
 .logo2 {
     width: 84px;
-    margin-top: 10px
+    margin-top: 10px;
 }
 
 .header {
@@ -278,7 +278,6 @@ body {
     white-space: nowrap;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-
 }
 
 .m-btn-primary:hover {
