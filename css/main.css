@@ -154,6 +154,7 @@ Global Styles
 }
 
 /*content holder*/
+
 .content {
     background-color: white;
     margin-left: 10px;
@@ -162,7 +163,7 @@ Global Styles
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-    padding: 40px 0px 0px 40px;
+    padding: 40px 3px 40px 3px;
 }
 
 
@@ -234,6 +235,7 @@ Header
 About Me
 ==========================================
 */
+
 .main-title {
     color: #dcdee2;
     font-size: 1.9em;
@@ -338,8 +340,57 @@ Webapps
 }
 
 .web-apps-content {
-        margin-top: 15%;
-    }
+    margin-top: 15%;
+}
+
+
+/*
+==========================================
+Intreulude
+==========================================
+*/
+
+.intrelude {
+/*    grid-template-columns: 1fr;*/
+    width: 100%;
+/*    grid-template-rows: auto auto auto;*/
+/*    height: 500px;*/
+    height: auto;
+    background-color: black;
+    background-image: url("/assets/photo%20challenge.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+/*    opacity: 0.7;*/
+    margin-top: 45px;
+}
+
+.intrelude-adj {
+
+}
+
+.profile-img {
+    display: block;
+
+    border-radius: 50%;
+    width: 150px;
+    margin: auto;
+        margin-top: 70px;
+
+
+}
+
+.intrelude-content {
+    color: white;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.adj-fab {
+    margin-right: 10px;
+}
+
+
+
 /*
 ==========================================
 Responsive
@@ -467,8 +518,4 @@ Responsive
         height: 45px;
         padding: 8px 22px;
     }
-    .intrelude-content {
-        width: 55%;
-    }
-
 }
