@@ -8,11 +8,11 @@ body {
 }
 
 
-/*==========================================*/
-
-/*Navigation css*/
-
-/*==========================================*/
+/*
+==========================================
+Navigation
+==========================================
+*/
 
 #nav {
     position: fixed;
@@ -110,11 +110,11 @@ body {
 
 
 
-/*==========================================*/
-
-/*Global styles*/
-
-/*==========================================*/
+/*
+==========================================
+Global Styles
+==========================================
+*/
 
 /*buttons*/
 
@@ -153,25 +153,41 @@ body {
     outline: 0;
 }
 
+/*content holder*/
+.content {
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 37px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    padding: 40px 0px 0px 40px;
+}
 
-/*==========================================*/
 
-/*Header*/
 
-/*==========================================*/
+/*
+==========================================
+Header
+==========================================
+*/
 
 .header {
     background-color: #2A363B;
-    min-height: 460px;
+    min-height: 560px;
     background-image: url(/assets/fireworks.png);
     background-size: cover;
     z-index: 21;
-    height: 100%;
 }
 
 .header-container {
     margin: 0px 0px 45px 0px;
     padding: 56px;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    margin-top: 0px;
 }
 
 .header-img {
@@ -213,4 +229,226 @@ body {
     background-color: white;
 }
 
-/*-------------------X*/
+/*
+==========================================
+About Me
+==========================================
+*/
+.main-title {
+    color: #dcdee2;
+    font-size: 1.9em;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+
+.title-fx {
+    color: #706072;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+.sub-header {
+    color: #706072;
+    text-transform: uppercase;
+    width: 45%;
+    margin-top: 7px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.icon-tweak {
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-top: 17px;
+}
+
+.skills-content {
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.progress-container {
+    width: 100%;
+    background-color: white;
+    border: 2px solid #706072;
+    margin-bottom: 17px;
+
+}
+
+.skill-item {
+    text-align: right;
+    padding-right: 2px;
+    line-height: 12px;
+    color: white;
+    font-size: 0.6em
+}
+
+.html {
+    width: 85%;
+    height: 10px;
+    background-color: #706072;
+}
+
+.js {
+    width: 94%;
+    height: 10px;
+    background-color: #706072;
+}
+
+.css {
+    width: 80%;
+    height: 10px;
+    background-color: #706072;
+}
+
+.node-js {
+    width: 50%;
+    height: 10px;
+    background-color: #706072;
+}
+
+.github {
+    width: 70%;
+    height: 10px;
+    background-color: #706072;
+}
+
+
+
+/*
+==========================================
+Responsive
+==========================================
+*/
+
+@media screen and (min-width: 640px) {
+    /*    HEADER*/
+    .header {
+        min-height: 768px;
+    }
+
+    .header-img {
+        width: 170px;
+    }
+    .sub-name {
+        font-size: 3.7em;
+    }
+    .name {
+        font-size: 2em;
+    }
+    .header-hr {
+        width: 70px;
+        height: 13px;
+    }
+
+    /*    ABOUT ME*/
+    .progress-container {
+        width: 100%;
+    }
+
+    /*    WEB APPS*/
+    .apps {
+        grid-gap: 0%;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-right: 30px;
+        padding: 10
+    }
+    .apps-img {
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        padding: 15%;
+
+    }
+    .thumb-title {
+        font-size: 80%;
+    }
+    .web-apps-content {
+        margin-top: 18%;
+        margin-left: 0%;
+    }
+
+    /*
+        PROJECTS
+*/
+    .projects-nav h4 {
+        margin-top: 0px;
+        color: white;
+        opacity: 0.8;
+        font-size: 1.3em;
+    }
+
+    .projects-title {
+        height: 200px;
+        /*        margin-bottom: 40px;*/
+    }
+
+    .layout-about-me {
+        display: grid;
+        /*        width: 70%;*/
+        grid-template-columns: 4fr 6fr;
+    }
+    .alt-container {
+        width: 100%;
+        /*
+        -ms-justify-self: none;
+        justify-self: none;
+*/
+    }
+    .layout-adj {
+        width: 80%;
+        -ms-justify-self: center;
+        justify-self: center;
+    }
+    .layout-web-apps {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0%;
+    }
+    .m-btn-primary {
+        min-width: 46px;
+        height: 45px;
+        padding: 8px 22px;
+    }
+    .music-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .music-grid div iframe {
+        height: 230px;
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .content {
+        width: 1170px;
+        margin: auto;
+        margin-top: 45px;
+    }
+
+    .header-container {
+        margin-top: 0px;
+    }
+
+
+    .header-A {
+        width: 960px;
+        /*            padding-left: 30px;*/
+    }
+    .m-btn-primary {
+        min-width: 46px;
+        height: 45px;
+        padding: 8px 22px;
+    }
+    .intrelude-content {
+        width: 55%;
+    }
+
+}
