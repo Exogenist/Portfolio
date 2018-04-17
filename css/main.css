@@ -497,7 +497,7 @@ Responsive
     }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1181px) {
     .content {
         width: 1170px;
         margin: auto;
