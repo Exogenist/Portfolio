@@ -4,7 +4,7 @@ body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
     color: #808080;
-    background-color: rgb(237, 237, 242);
+    background-color: rgb(214, 214, 214);
 }
 
 
@@ -274,7 +274,7 @@ About Me
     width: 45%;
     margin-top: 7px;
     font-size: 1em;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .icon-tweak {
@@ -408,6 +408,23 @@ Intreulude
     margin-right: 10px;
 }
 
+/*
+==========================================
+Logo Section
+==========================================
+*/
+
+.logo-header {
+    text-align: center;
+        color: #706072;
+    text-transform: uppercase;
+
+    margin-top: 67px;
+    font-size: 2em;
+    font-weight: 500;
+    opacity: 0.6;
+    margin-bottom: 15px;
+}
 
 
 /*
