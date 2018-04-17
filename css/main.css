@@ -4,7 +4,7 @@ body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
     color: #808080;
-    background-color: rgb(214, 214, 214);
+    background-color: #e0e0e0;
 }
 
 
@@ -426,6 +426,10 @@ Logo Section
     margin-bottom: 15px;
 }
 
+.logo-txt {
+/*    width: 50%;*/
+    text-align: center;
+}
 
 /*
 ==========================================
