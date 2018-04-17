@@ -433,6 +433,108 @@ Logo Section
 
 /*
 ==========================================
+illustration Section
+==========================================
+*/
+
+.illus-header {
+        text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 500;
+    opacity: 0.6;
+
+}
+
+.jumbo-style {
+    margin-top: 100px;
+    background-color: #706072;
+    color: white;
+}
+
+.picture {
+	max-width: 100%
+}
+
+/*
+==========================================
+Contact me
+==========================================
+*/
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #ededed;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #706072;
+    color: white;
+    padding: 1px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+textarea {
+    width: 100%;
+}
+
+/*
+==========================================
+footer
+==========================================
+*/
+
+.footer {
+    width: 100%;
+    margin: 0px;
+    display: grid;
+    height: 130px;
+    background-color: #2A363B;
+    margin: 0px;
+    margin-top: 50px;
+
+}
+
+.footer-logo {
+    justify-self: center;
+    align-content: center;
+    margin: 0px;
+    margin-top: 7px;
+    width: 59%;
+    display: grid;
+    grid-template-columns: 1fr;
+
+/*    grid-template-rows: */
+    /*    font-size: 0.7em;*/
+}
+
+.footer-img {
+    width: 80px;
+    justify-self: center;
+}
+
+.footer-txt {
+    text-align: center;
+    margin: 0px;
+
+}
+
+/*
+==========================================
 Responsive
 ==========================================
 */
