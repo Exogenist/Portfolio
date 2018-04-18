@@ -44,17 +44,17 @@ window.onload = function () {
     //    init parallax
     $('.header').parallaxie();
     $('.intrelude').parallaxie();
-//    $(".header").css("background-image", "url(/assets/fireworks.png)");
-  $( ".header" ).animate({
-    opacity: "1"
-  }, 1000, function() {
-    // Animation complete.
-  });
-    $( ".content" ).animate({
-    opacity: "1"
-  }, 1000, function() {
-    // Animation complete.
-  });
+    //    $(".header").css("background-image", "url(/assets/fireworks.png)");
+    $(".header").animate({
+        opacity: "1"
+    }, 1000, function () {
+        // Animation complete.
+    });
+    $(".content").animate({
+        opacity: "1"
+    }, 1000, function () {
+        // Animation complete.
+    });
 
     //        scroll animation
     $(this).scrollTop(0);
@@ -92,5 +92,7 @@ window.onload = function () {
             });
         } // End if
     });
+
+
 
 }
