@@ -50,11 +50,11 @@
                         <img class="logo2" src="assets/logo.svg" alt="">
                     </div>
 
-                    <a href="#">Home</a>
-                    <a href="#">About Me</a>
-                    <a href="#">web apps</a>
-                    <a href="#">projects</a>
-                    <a href="#">contact me</a>
+                    <a href="#home">Home</a>
+                    <a href="#about">About Me</a>
+                    <a href="#web">web apps</a>
+                    <a href="#projects">projects</a>
+                    <a href="#contact">contact me</a>
                 </div>
             </div>
         </nav>
@@ -67,7 +67,7 @@
     ++++++++++ HEADER +++++++++++++++++++
     +++++++++++++++++++++++++++++++++++++
 -->
-    <div class="header">
+    <div class="header" id="home">
         <div class="content header-container">
             <img class="header-img" src="/assets/me2.jpg" alt="">
             <h1 class="name">Swainson <br> Holness</h1>
@@ -85,7 +85,7 @@
     ++++++++++ About me +++++++++++++++++
     +++++++++++++++++++++++++++++++++++++
 -->
-    <div class="content">
+    <div class="content" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-sm">
@@ -135,8 +135,8 @@
     ++++++++++ webapps ++++++++++++++++++
     +++++++++++++++++++++++++++++++++++++
 -->
-    <div class="content">
-        <div class="container">
+    <div class="content" id="web">
+        <div class="container slideanim">
             <div class="row">
                 <div class="col-sm">
                     <h1 class="main-title"><span class="title-fx">W</span>eb apps</h1>
@@ -188,7 +188,7 @@
 
     <div class="intrelude">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center slideanim">
                 <div class="col-sm-7">
                     <img class="profile-img " src="assets/s_holness.jpg" alt="">
                     <p class="intrelude-content ">github is the place I keep most of my open source code. Codepen is where I demo some of these apps for the open source commuinity. Go there to find more information about the apps I develop.</p>
@@ -209,8 +209,8 @@
     +++++++++++++++++++++++++++++++++++++
 -->
 
-    <div class="content">
-        <div class="container">
+    <div class="content" id="projects">
+        <div class="container slideanim">
             <div class="row">
                 <div class="col">
                     <h1 class="main-title"><span class="title-fx">P</span>rojects</h1>
@@ -220,8 +220,8 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-sm">
+            <div class="row slideanim">
+                <div class="col-sm ">
                     <h5>Chasing Dreams</h5>
                     <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/169419767&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
                 </div>
@@ -240,7 +240,7 @@
     <!--   Logo comission subsection-->
 
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center slideanim">
             <div class="col-sm-7">
                 <h1 class="logo-header">my logos</h1>
                 <p class="logo-txt">github is the place I keep most of my open source code. Codepen is where I demo some of these apps for the open source commuinity. Go there to find more information about the apps I develop.</p>
@@ -249,7 +249,7 @@
         </div>
     </div>
 
-    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:100px;overflow:hidden;visibility:hidden;">
+    <div id="jssor_1" class="slideanim" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:100px;overflow:hidden;visibility:hidden;">
         <div data-u="loading" style="position:absolute;top:0px;left:0px;background:url('assets/loading.gif') no-repeat 50% 50%;background-color:rgba(0, 0, 0, 0.7);"></div>
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:100px;overflow:hidden;">
             <div>
@@ -289,13 +289,13 @@
 -->
 
     <div class="jumbotron jumbotron-fluid jumbo-style">
-        <div class="container">
+        <div class="container slideanim">
             <h1 class="text-center illus-header ">My Illustrations</h1>
             <p class="lead titleColorYellow text-center">Take a look at some of my projects</p>
         </div>
     </div>
 
-    <div class="container cont-adj">
+    <div class="container cont-adj slideanim">
         <div class="row titleColorWhite no-gutters" id="galleryPadding">
             <div class="col-sm-3">
                 <img src="/assets/honesty.png" class="picture">
@@ -332,8 +332,8 @@
     ++++++++++ Contact me +++++++++++++++
     +++++++++++++++++++++++++++++++++++++
 -->
-    <div class="content">
-        <div class="container">
+    <div class="content" id="contact">
+        <div class="container slideanim">
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <h1 class="main-title"><span class="title-fx">C</span>ontact Me</h1>
@@ -419,7 +419,10 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
