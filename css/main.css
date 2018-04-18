@@ -24,8 +24,8 @@ Navigation
     height: 56px;
     background-color: white;
     position: relative;
-        -webkit-box-shadow: -1px 2px 3px -1px rgba(0, 0, 0, 0.10);
--moz-box-shadow: -1px 2px 3px -1px rgba(0, 0, 0, 0.10);
+    -webkit-box-shadow: -1px 2px 3px -1px rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: -1px 2px 3px -1px rgba(0, 0, 0, 0.10);
     box-shadow: -1px 2px 3px -1px rgba(0, 0, 0, 0.10);
 }
 
@@ -59,7 +59,7 @@ Navigation
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     box-shadow: 2px 2px 2px -2px rgba(0, 0, 0, 0.53);
-     -webkit-box-shadow: 6px 2px 2px -2px rgba(0, 0, 0, 0.53);
+    -webkit-box-shadow: 6px 2px 2px -2px rgba(0, 0, 0, 0.53);
     -moz-box-shadow: 6px 2px 2px -2px rgba(0, 0, 0, 0.53);
     box-shadow: 2px 2px 2px -2px rgba(0, 0, 0, 0.53);
 }
@@ -72,7 +72,7 @@ Navigation
     display: block;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-        -o-transition: all 0.3s;
+    -o-transition: all 0.3s;
 
 }
 
@@ -364,22 +364,20 @@ Intreulude
 */
 
 .intrelude {
-/*    grid-template-columns: 1fr;*/
+    /*    grid-template-columns: 1fr;*/
     width: 100%;
-/*    grid-template-rows: auto auto auto;*/
-/*    height: 500px;*/
+    /*    grid-template-rows: auto auto auto;*/
+    /*    height: 500px;*/
     height: auto;
     background-color: black;
     background-image: url("/assets/photo%20challenge.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-/*    opacity: 0.7;*/
+    /*    opacity: 0.7;*/
     margin-top: 45px;
 }
 
-.intrelude-adj {
-
-}
+.intrelude-adj {}
 
 .profile-img {
     display: block;
@@ -387,7 +385,7 @@ Intreulude
     border-radius: 50%;
     width: 150px;
     margin: auto;
-        margin-top: 70px;
+    margin-top: 70px;
 
 
 }
@@ -416,7 +414,7 @@ Logo Section
 
 .logo-header {
     text-align: center;
-        color: #706072;
+    color: #706072;
     text-transform: uppercase;
 
     margin-top: 67px;
@@ -427,7 +425,7 @@ Logo Section
 }
 
 .logo-txt {
-/*    width: 50%;*/
+    /*    width: 50%;*/
     text-align: center;
 }
 
@@ -438,7 +436,7 @@ illustration Section
 */
 
 .illus-header {
-        text-align: center;
+    text-align: center;
     text-transform: uppercase;
     font-size: 2em;
     font-weight: 500;
@@ -453,7 +451,7 @@ illustration Section
 }
 
 .picture {
-	max-width: 100%
+    max-width: 100%
 }
 
 /*
@@ -461,6 +459,7 @@ illustration Section
 Contact me
 ==========================================
 */
+
 input[type=text],
 select {
     width: 100%;
@@ -470,25 +469,28 @@ select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-/*    color: #d3d3d3;*/
+    /*    color: #d3d3d3;*/
 }
 
 input {
     text-indent: 10px;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #d3d3d3;
-    opacity: 1; /* Firefox */
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #d3d3d3;
 
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #d3d3d3;
-
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder {
+    /* Microsoft Edge */
     color: #d3d3d3;
 
 }
@@ -510,6 +512,7 @@ input[type=submit]:hover {
 
 textarea {
     width: 100%;
+    padding-left: 30px;
 }
 
 /*
@@ -518,39 +521,19 @@ footer
 ==========================================
 */
 
-.footer {
-    width: 100%;
-    margin: 0px;
-    display: grid;
-    height: 130px;
-/*    background-color: #2A363B;*/
-    margin: 0px;
-    margin-top: 50px;
-
-}
-
-.footer-logo {
-    justify-self: center;
-    align-content: center;
-    margin: 0px;
-    margin-top: 7px;
-    width: 59%;
-    display: grid;
-    grid-template-columns: 1fr;
-
-/*    grid-template-rows: */
-    /*    font-size: 0.7em;*/
+.footer-adj {
+    display: flex;
+    justify-content: center;
 }
 
 .footer-img {
     width: 80px;
-    justify-self: center;
+
 }
 
 .footer-txt {
     text-align: center;
     margin: 0px;
-
 }
 
 /*
