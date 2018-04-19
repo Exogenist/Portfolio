@@ -568,6 +568,9 @@ Projects
   backface-visibility: hidden;
 }
 
+
+
+
 .hover-state {
       transition: .5s ease;
   opacity: 0;
@@ -582,6 +585,19 @@ Projects
 .hover-box:hover .dimentions {
     opacity: 0.3;
 
+}
+
+.hover-box:hover .hover-state {
+    opacity: 1;
+
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+    z-index: 21;
 }
 /*
 ==========================================
