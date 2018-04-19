@@ -547,7 +547,16 @@ Projects
 
 .cont-adj {
     margin-top: 70px;
-    width: 100%;
+
+/*    width: 100%;*/
+/*    margin: auto;*/
+    background-color: rgba(0,0,0,0);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0);
+}
+
+.dimentions {
+      width: 100%;
+    margin: 0px;
 }
 /*
 ==========================================
