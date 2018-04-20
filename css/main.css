@@ -37,10 +37,19 @@ Navigation
     margin-left: 30px;
 }
 
-.bar1,
-.bar2,
-.bar3 {
+.bar1 {
+    width: 7px;
+}
+
+.bar2 {
     width: 17px;
+}
+
+.bar3 {
+    width: 13px;
+}
+
+.bar {
     height: 2px;
     background-color: #706072;
     margin: 3px 0;
@@ -591,7 +600,7 @@ Projects
 }
 
 .hover-box {
-        cursor: pointer;
+    cursor: pointer;
 }
 
 .hover-box:hover .dimentions {
