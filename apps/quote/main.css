@@ -1,0 +1,163 @@
+body {
+    margin: 0px;
+    font-family: 'Coda', cursive;
+}
+
+#background {
+    min-width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, rgb(220, 120, 120) 19%, rgb(220, 220, 119) 82%);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10px 1fr 30px;
+}
+
+.loading {
+    align-self: center;
+    justify-self: center;
+    border: 8px solid rgba(255, 255, 255, 0.2);
+    border-top: 8px solid rgb(225, 225, 225);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#progress {
+    width: 100vw;
+    height: 7px;
+    background-color: grey;
+    /*    opacity: 0;*/
+}
+
+#loadBar {
+    padding: 0px;
+    margin: 0px;
+    width: 0%;
+    height: 7px;
+    background-color: rgb(157, 186, 232);
+    transition: all 0.3s;
+}
+
+.quoteWrapper {
+    align-self: center;
+    justify-self: center;
+    width: 300px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 34px 29px 47px -15px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 34px 29px 47px -15px rgba(0, 0, 0, 0.21);
+    box-shadow: 34px 29px 47px -15px rgba(0, 0, 0, 0.21);
+    word-wrap: break-word;
+    max-height: 0px;
+    overflow: hidden;
+    opacity: 0.1;
+    transition: 1s all;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.img {
+    padding-left: 10px;
+}
+
+.text {
+    height: auto;
+    /*
+    padding-bottom: 20px;
+    margin: 0px;
+*/
+}
+
+.sig {
+    margin: 0;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+
+.content {
+    padding: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: auto;
+
+    text-align: center;
+}
+
+#getMessage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#refresh {
+    justify-self: end;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#twitter {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#refresh:hover, #twitter:hover {
+    opacity: 0.4;
+}
+
+#dev{
+    color: white;
+    font-size: 0.6em;
+    padding-left: 10px;
+    margin-top: 10px;
+    opacity: 0;
+}
+
+@media screen and (min-width: 566px) {
+    .quoteWrapper {
+        width: 420px;
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .quoteWrapper {
+        width: 620px;
+
+    }
+    .content {
+        font-size: 1em
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .quoteWrapper {
+        width: 620px;
+
+    }
+    .content {
+        font-size: 1.4em;
+    }
+    .sig {
+        font-size: 1em;
+    }
+    .img {
+        width: 70px;
+        height: 70px;
+    }
+}
