@@ -113,6 +113,8 @@ Navigation
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     /*    z-index: 1;*/
+    margin: 0px;
+    padding: 0px;
 }
 
 .logo {
@@ -593,7 +595,7 @@ Projects
 }
 
 .text {
-  background-color: #4CAF50;
+  background-color: transparent;
   color: white;
   font-size: 16px;
   padding: 16px 32px;
