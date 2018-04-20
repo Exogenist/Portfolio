@@ -504,10 +504,7 @@ Projects
 */
 
 .intrelude {
-    /*    grid-template-columns: 1fr;*/
     width: 100%;
-    /*    grid-template-rows: auto auto auto;*/
-    /*    height: 500px;*/
     height: auto;
     background-color: black;
     background-image: url("/assets/photo%20challenge.jpg");
@@ -781,12 +778,6 @@ Responsive
     }
 
     /*    WEB APPS*/
-    .apps {
-        grid-gap: 0%;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-right: 30px;
-        padding: 10
-    }
     .apps-img {
         width: 100%;
         height: auto;
@@ -825,11 +816,6 @@ Responsive
         height: 45px;
         padding: 8px 22px;
     }
-    .music-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 20px;
-    }
 
     .music-grid div iframe {
         height: 230px;
@@ -850,7 +836,6 @@ Responsive
 
     .header-A {
         width: 960px;
-        /*            padding-left: 30px;*/
     }
     .m-btn-primary {
         min-width: 46px;
