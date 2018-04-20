@@ -1,0 +1,21 @@
+body {
+	background: #282828;
+}
+
+h1 {
+	text-transform: uppercase;
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+.text {
+	color: #8f9d9d;
+	text-align: center;
+	margin: auto;
+}
+
+.button {
+	margin: auto;
+    width: 50%;
+    padding: 30px;
+
