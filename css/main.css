@@ -423,6 +423,11 @@ About Me
     margin-top: 17px;
 }
 
+.icon-tweak:hover {
+    color: #6a8193;
+    cursor: pointer;
+}
+
 * {
     box-sizing: border-box
 }
@@ -596,7 +601,6 @@ Projects
 
 .hover-box:hover .hover-state {
     opacity: 1;
-
 }
 
 .text {
@@ -783,7 +787,13 @@ Responsive
         height: auto;
         margin: 0px;
         padding: 15%;
+        opacity: 0.8;
 
+
+    }
+    .apps-img:hover {
+        cursor: pointer;
+        opacity: 1
     }
     .thumb-title {
         font-size: 80%;
