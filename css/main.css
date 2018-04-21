@@ -669,6 +669,10 @@ illustration Section
     max-width: 100%
 }
 
+.modal-adjust {
+    width: 100%;
+}
+
 /*
 ==========================================
 Contact me
