@@ -2,6 +2,9 @@ const paper = document.getElementById("paper");
 const ctx = paper.getContext("2d");
 let w = document.body.clientWidth - 4;
 let h = document.body.clientHeight - 4;
+	let mobile   = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent);
+	let start = mobile ? "touchstart" : "mousedown";
+	let end = mobile ? "touchend" : "mouseup";
 token = false;
 onState = false;
 let r = 29;
@@ -113,16 +116,15 @@ function flashBlue() {
     }, 24);
 }
 
-document.getElementById("page").addEventListener("click", function (e) {
+document.getElementById("page").addEventListener(start, function (e) {
     e.preventDefault();
-
-
+// alert(e.touches[0].pageX+" "+ e.touches[0].pageY);
     if (token === false) {
         if (onState === false) {
             onState = true;
             flashBlue();
 
-            ctx.translate(e.clientX, e.clientY);
+            ctx.translate(e.clientX || e.touches[0].pageX, e.clientY || e.touches[0].pageY);
             ctx.scale(0.4, 0.4);
             let i = 2;
             let a = getRandomIntInclusive(1, 180);
@@ -149,7 +151,7 @@ document.getElementById("page").addEventListener("click", function (e) {
     } else {
         ctx.setTransform(1, 0, 0, 1, 0, 0);
         ctx.restore();
-        ctx.translate(e.clientX, e.clientY);
+        ctx.translate(e.clientX || e.touches[0].pageX, e.clientY || e.touches[0].pageY);
         ctx.scale(0.4, 0.4);
         flashBlue();
         let i = 2;
