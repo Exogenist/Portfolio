@@ -4,4 +4,16 @@ body {
     -ms-user-select: none;
     user-select: none;
     background-color: #96ceb4;
+    margin: 0px;
+    padding: 0px;
+}
+
+.size-tweak{
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+}
+
+.padMe {
+    margin-top: 30px;
 }
