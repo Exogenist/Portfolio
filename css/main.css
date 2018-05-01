@@ -147,6 +147,14 @@ Global Styles
 ==========================================
 */
 
+/*iframes*/
+.i-fix {
+    width: 100%;
+    height: 300px;
+    border-style: none;
+}
+
+
 /*links*/
 /* unvisited link */
 
