@@ -147,6 +147,31 @@ Global Styles
 ==========================================
 */
 
+/*links*/
+/* unvisited link */
+
+.btn-v:link {
+    color: white;
+    padding-top: 5px;
+}
+
+/* visited link */
+.btn-v:visited {
+    color: white;
+}
+
+/* mouse over link */
+.btn-v:hover {
+    color: white;
+    text-decoration:  none;
+}
+
+/* selected link */
+.btn-v:active {
+    color: white;
+    text-decoration:  none;
+}
+
 /*buttons*/
 
 .m-btn-primary {
@@ -839,6 +864,10 @@ Responsive
         min-width: 46px;
         height: 45px;
         padding: 8px 22px;
+    }
+
+    .btn-v:link {
+        padding-top: 12px;
     }
 
     .music-grid div iframe {
