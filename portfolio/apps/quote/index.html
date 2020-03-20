@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quote App</title>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+
+    <link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id="background">
+        <div id="progress">
+            <div id="loadBar"></div>
+        </div>
+
+        <div class="loading"></div>
+
+        <div class='quoteWrapper'>
+
+            <svg class="img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 100 99.999" enable-background="new 0 0 100 99.999" xml:space="preserve">
+            <polygon points="22.468,62.178 41.67,62.178 41.67,99.123 1.254,99.123 1.254,62.178 27.432,21.735 "/>
+            <polygon points="79.676,62.178 98.877,62.178 98.877,99.123 58.462,99.123 58.462,62.178 84.639,21.735 "/>
+            </svg>
+            <div class='text'>
+                <p class="content">Technology has moved away from sharing and toward ownership. This suits software and hardware companies just fine: They create new, bloated programs that require more disk space and processing power. We buy bigger, faster computers, which then require more complex operating systems, and so on.  This suits software and hardware companies just fine:  This suits software and hardware companies just fine: </p>
+                <h6 class="sig">Douglas Rushkoff</h6>
+            </div>
+
+            <div id="getMessage">
+                <svg id="refresh" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M28.985,39.998c-1.168,0.33-2.373,0.527-3.586,0.585"/>
+                <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M35.071,36.818c-1.122,0.913-2.357,1.687-3.672,2.291"/>
+                <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M39.258,31.885c-0.627,1.1-1.375,2.13-2.224,3.069"/>
+                <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M41.417,25.558c-0.201,1.436-0.579,2.845-1.123,4.188"/>
+                <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M9.167,24C9.164,15.049,16.779,7.25,25.783,7.25
+                    c8.583,0,15.739,7.289,15.8,15.8"/>
+                <polyline id="dyclr1" fill="none" stroke="#000000" stroke-miterlimit="10" points="4.605,19.757 9.131,24.368 14.606,19.758 "/>
+                </svg>
+                <span>
+                    <svg id="twitter" version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path id="dyclr2" fill="#010101" d="M43.225,13.362c-0.189-0.189-0.507-0.252-0.76-0.189L41.2,13.616c0.761-0.886,1.265-1.834,1.583-2.718
+                                c0.125-0.317,0.063-0.569-0.129-0.76c-0.189-0.188-0.505-0.252-0.759-0.126c-1.769,0.759-3.284,1.391-4.551,1.77
+                                c0,0.063-0.064,0-0.128,0c-1.01-0.568-3.474-1.833-5.246-1.833c-4.488,0.063-8.09,3.855-8.09,8.472v0.252
+                                c-6.574-1.266-10.177-3.161-14.097-7.27l-0.631-0.632l-0.379,0.758c-2.149,4.109-0.633,7.839,1.832,10.366
+                                c-1.138-0.189-1.896-0.568-2.592-1.137c-0.252-0.188-0.568-0.252-0.884-0.063c-0.252,0.127-0.379,0.506-0.316,0.822
+                                c0.884,2.97,3.097,5.375,5.499,6.824c-1.138,0-2.087-0.124-3.034-0.755c-0.252-0.128-0.631-0.128-0.884,0.064
+                                c-0.254,0.186-0.38,0.504-0.254,0.816c1.138,3.225,3.352,4.936,6.891,5.379c-1.833,1.07-4.235,1.957-7.965,2.021
+                                c-0.379,0-0.694,0.251-0.822,0.567c-0.126,0.378,0,0.696,0.253,0.948c2.276,1.833,7.333,2.908,13.59,2.908
+                                c11.126,0,20.228-9.925,20.228-22.125v-0.189c1.391-0.696,2.531-2.023,3.098-3.856C43.478,13.868,43.413,13.552,43.225,13.362z
+                                 M39.432,16.966l-0.38,0.126v1.074c0,11.503-8.532,20.861-18.964,20.861c-5.752,0-9.608-0.948-11.693-1.962
+                                c4.361-0.315,6.889-1.703,8.85-3.22l1.58-1.141h-1.896c-3.603,0-5.815-1.014-7.08-3.413c1.138,0.378,2.338,0.378,3.667,0.318
+                                c0.506-0.064,1.011-0.064,1.517-0.064l0.189-1.265c-2.402-0.695-5.246-2.846-6.637-5.752c1.265,0.568,2.655,0.694,3.919,0.694
+                                h1.959l-1.58-1.138c-1.327-0.948-5.247-4.299-3.35-9.103c4.046,3.983,7.901,5.816,14.855,7.08l0.757,0.128v-1.769
+                                c0-3.921,3.033-7.144,6.829-7.207c1.451-0.064,3.855,1.263,4.549,1.642c0.38,0.191,0.758,0.254,1.138,0.127
+                                c0.951-0.316,2.087-0.758,3.351-1.264c-0.568,0.948-1.326,1.833-2.337,2.654c-0.252,0.189-0.317,0.569-0.19,0.885
+                                c0.128,0.316,0.505,0.443,0.823,0.316l2.464-0.822C41.327,15.575,40.633,16.522,39.432,16.966z"/>
+                        </g>
+                    </g>
+                    </svg>
+                </span>
+            </div>
+        </div>
+
+        <div><p id="dev">Coded by Swainson Holness</p></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

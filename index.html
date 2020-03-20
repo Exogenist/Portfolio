@@ -27,7 +27,7 @@
 
 <!--color pallete LightGreen-#99B898   LightOrange-#FECEAB   LightR-#FF847C   Red-#E84A5F   Black-#2A363B  darkPurple #706072-->
 
-<body>
+<body class="fade-in-fwd ">
     <!--
     +++++++++++++++++++++++++++++++++++++
     ++++++++++ Nav ++++++++++++++++++++++
@@ -35,7 +35,8 @@
 -->
     <div class="overlay"></div>
     <div id="nav">
-        <nav>
+        <nav 
+           id="navbar">
             <div class="exo-nav">
                 <div class="ham-box" id="ham-anim">
                     <div class="bar1 bar"></div>
@@ -54,7 +55,6 @@
 
                     <a href="#home">Home</a>
                     <a href="#about">About Me</a>
-                    <a href="#web">web apps</a>
                     <a href="#projects">projects</a>
                     <a href="#contact">contact me</a>
                 </div>
@@ -69,18 +69,21 @@
     ++++++++++ HEADER +++++++++++++++++++
     +++++++++++++++++++++++++++++++++++++
 -->
-    <div class="header" id="home">
+   <section id="welcome-section">
+       <div class="header" id="home">
         <div class="content header-container">
             <img class="header-img" src="/assets/me2.jpg" alt="">
             <h1 class="name">Swainson <br> Holness</h1>
             <h1 class="text-shadow-drop-bottom sub-name">portfolio</h1>
             <hr class="header-hr">
             <p class="header-content">view some of my latest web-apps and projects.</p>
-            <a href="#web" class="m-btn-primary btn-v">web apps</a>
+            <a href="https://www.freecodecamp.org/exogenist" target="_blank" class="m-btn-primary btn-v">FCC profile</a>
 
             <a href="#projects" class="m-btn-primary btn-v">projects</a>
         </div>
     </div>
+   </section>
+    
     <!--    END-->
 
     <!--
@@ -139,14 +142,14 @@
     ++++++++++ webapps ++++++++++++++++++
     +++++++++++++++++++++++++++++++++++++
 -->
-    <div class="content" id="web">
+    <div class="content" id="projects">
         <div class="container">
             <div class="row">
                 <div class="col-sm">
                     <h1 class="main-title"><span class="title-fx">W</span>eb apps</h1>
                     <h4 class="sub-header">Apps I've developed</h4>
 
-                    <div class="row">
+                    <div class="row project-tile" id="">
                         <div class="col">
                             <a href="/apps/textGenerator/" target="_blank">
                                 <img class="apps-img" src="assets/text.svg" alt="text gen">
@@ -206,207 +209,22 @@
             <div class="row justify-content-center ">
                 <div class="col-sm-7">
                     <img alt="me" class="profile-img " src="assets/s_holness.jpg">
-                    <p class="intrelude-content ">Github is the place I keep most of my open source code. Codepen is where I demo web-apps for the open source community. </p>
+                    <p class="intrelude-content ">Github is the place I keep most of my open source code.</p>
                     <div class="btn-wrapper">
-                        <a class="m-btn-primary btn-v" href="https://github.com/Exogenist" target="_blank">
+                        <a id="profile-link" class="m-btn-primary btn-v" href="https://github.com/Exogenist" target="_blank">
                            <i class="fab fa-github adj-fab"></i>GitHub
                        </a>
 
-                        <a class="m-btn-primary btn-v" href="https://codepen.io/exogenist/" target="_blank"><i class="fab fa-codepen adj-fab"></i>Codepen</a>
+                        <a class="m-btn-primary btn-v" href="https://www.freecodecamp.org/exogenist" target="_blank"><i class="fab fa-free-code-camp adj-fab"></i>FCC profile</a>
 
                     </div>
-                    <!--github is the place i keep most of my open source code.-->
+
                 </div>
             </div>
         </div>
 
     </div>
-
-    <!--
-    +++++++++++++++++++++++++++++++++++++
-    ++++++++++ projects +++++++++++++++++
-    +++++++++++++++++++++++++++++++++++++
--->
-
-    <div class="content" id="projects">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1 class="main-title"><span class="title-fx">P</span>rojects</h1>
-                    <h1 class="sub-header">My Music</h1>
-                    <!--                    might use it in future-->
-                    <!--                    <p class="music-content">I also share a love of music and whenever I get the chance I like to experiment with it. The following are a mixture of styles I produced.</p>-->
-                    <hr>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm ">
-                    <h5>Chasing Dreams</h5>
-                    <iframe class="i-fix" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/169419767&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-                </div>
-                <div class="col-sm">
-                    <h5>Vibrance</h5>
-                    <iframe class="i-fix" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/159400826&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-                </div>
-                <div class="col-sm">
-                    <h5>Wha Mi Seh</h5>
-                    <iframe class="i-fix" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/147759553&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--   Logo comission subsection-->
-
-    <div class="container">
-        <div class="row justify-content-center ">
-            <div class="col-sm-7">
-                <h1 class="logo-header">Works</h1>
-                <!--                <p class="logo-txt">Logos I've worked on</p>-->
-                <hr class="logo-hr">
-            </div>
-        </div>
-    </div>
-
-    <div id="jssor_1" class="" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:100px;overflow:hidden;visibility:hidden;">
-        <div data-u="loading" style="position:absolute;top:0px;left:0px;background:url('assets/loading.gif') no-repeat 50% 50%;background-color:rgba(0, 0, 0, 0.7);"></div>
-        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:100px;overflow:hidden;">
-            <div>
-                <img alt="11hauz" data-u="image" src="/assets/elevenhauz.png" />
-            </div>
-            <div>
-                <img alt="kecc" data-u="image" src="/assets/kecc.png" />
-            </div>
-            <div>
-                <img alt="robotik" data-u="image" src="/assets/robotik.png" />
-            </div>
-            <div>
-                <img alt="ppb" data-u="image" src="/assets/ppb.png" />
-            </div>
-            <div>
-                <img alt="hfin" data-u="image" src="/assets/hfin.png" />
-            </div>
-            <div>
-                <img alt="xid" data-u="image" src="/assets/xid.png" />
-            </div>
-            <div>
-                <img alt="tprb" data-u="image" src="/assets/tprb.png" />
-            </div>
-            <div>
-                <img alt="owl" data-u="image" src="/assets/owl.png" />
-            </div>
-
-
-            <a data-u="any" href="https://www.jssor.com" style="display:none">js slider</a>
-        </div>
-    </div>
-
-    <!--
-    +++++++++++++++++++++++++++++++++++++
-    ++++++++++ illustrations ++++++++++++
-    +++++++++++++++++++++++++++++++++++++
--->
-
-    <div class="content cont-adj ">
-
-        <!--       May want to use this markup in the future-->
-
-        <!--
-        <div class="row justify-content-center titleColorWhite no-gutters" id="galleryPadding">
-            <div class="col-md-3">
-                <img src="/assets/honesty.png" class="picture">
-            </div>
-            <div class="col-md-3">
-                <img src="/assets/water.png" class="picture">
-            </div>
-            <div class="col-md-3">
-                <img src="/assets/her.png" class="picture">
-            </div>
-            <div class="col-md-3">
-                <img src="/assets/hazmat.png" class="picture">
-            </div>
-        </div>
--->
-
-        <div class="row  titleColorWhite no-gutters img-adj">
-            <div class="col-md-6 hover-box">
-                <a href="http://11hauz.com" target="_blank">
-                    <img alt="agent" class="dimentions" src="/assets/Agentx.png">
-                    <div class="hover-state">
-                        <div class="text ">
-                            <h6>11hauz Jamaican Cuisine</h6>
-                            <p>- View -</p>
-                        </div>
-                    </div>
-                </a>
-
-            </div>
-            <div class="col-md-6 hover-box">
-                <a href="https://medium.com/@swainson/the-spiralator-app-i-made-with-javascript-cdbd631fd306" target="_blank">
-                    <img alt="dim" class="dimentions" src="/assets/Abbys.png">
-                    <div class="hover-state">
-                        <div class="text">
-                            <h6>Generating art with algorithms</h6>
-                            <p>- View -</p>
-                        </div>
-                    </div>
-               </a>
-
-            </div>
-            <div class="col-md-6 hover-box">
-                <a href="https://www.facebook.com/Princess-Pearl-Boutique-303628710054051/" target="_blank">
-                                   <img alt="ppboutiqe" class="dimentions" src="/assets/her2.png">
-                <div class="hover-state">
-                    <div class="text">
-                        <h6>Princess Pearl Boutique branding</h6>
-                        <p>- View -</p>
-                    </div>
-                </div>
-               </a>
-
-            </div>
-            <div class="col-md-6 hover-box">
-                <a href="#" data-toggle="modal" data-target="#flyer-modal">
-                   <img alt="rasta" class="dimentions" src="/assets/rasta.png">
-                    <div class="hover-state">
-                        <div class="text">
-                            <h6>flyer design</h6>
-                            <p>- View -</p>
-                        </div>
-                    </div>
-               </a>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Button trigger modal -->
-    <!--
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-  Launch demo modal
-</button>
--->
-
-    <!-- Modal -->
-    <div class="modal fade" id="flyer-modal" tabindex="-1" role="dialog" aria-labelledby="flyer-modal" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="ModalLongTitle">Flyer Goodness</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-                </div>
-                <div class="modal-body">
-                    <img alt="flyerwork" class="modal-adjust" src="assets/flyerwork.png">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="m-btn-primary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
+   
 
     <!--
     +++++++++++++++++++++++++++++++++++++
@@ -418,7 +236,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <h1 class="main-title"><span class="title-fx">C</span>ontact Me</h1>
-                    <p> <span><i class="fas fa-download"></i></span> Download my <a href="Resume.html">resume</a> </p>
+                    <p> <span><i class="fas fa-download"></i></span> Download my <a href="resume.pdf">resume</a> </p>
                     <form class="contact-form" name="contactForm" method="post" action="/sys/message.php">
                         <input type="text" placeholder="First Name*" name="first_name"> <input type="text" placeholder="Last Name*" name="last_name">
                         <input type="text" placeholder="somone@email.com*" name="email">
@@ -457,47 +275,8 @@
             </div>
         </div>
     </footer>
-
-    <!-- #region Jssor Slider Begin -->
-    <!-- Generator: Jssor Slider Maker -->
-    <!-- Source: https://www.jssor.com -->
-    <script src="/js/slider.js"></script>
-    <script>
-        jssor_1_slider_init = function() {
-
-            var jssor_1_options = {
-                $AutoPlay: 1,
-                $Idle: 0,
-                $SlideDuration: 5000,
-                $SlideEasing: $Jease$.$Linear,
-                $PauseOnHover: 4,
-                $SlideWidth: 170,
-                $Cols: 7
-            };
-
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-
-            /*#region responsive code begin*/
-            /*remove responsive code if you don't want the slider scales while window resizing*/
-            function ScaleSlider() {
-                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
-                if (refSize) {
-                    refSize = Math.min(refSize, 980);
-                    jssor_1_slider.$ScaleWidth(refSize);
-                } else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-            ScaleSlider();
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            /*#endregion responsive code end*/
-        };
-    </script>
-    <script>
-        jssor_1_slider_init();
-    </script>
+    
+<!--    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
 
 
     <!-- Bootstrap core JavaScript

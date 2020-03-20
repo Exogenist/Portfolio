@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<!-- Version 0.1 Random Text Generator -->
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Link Boostrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Link jQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+
+    <!--Embeded CSS-->
+    <style type="text/css">
+        body {
+            background: #282828;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+
+        .text {
+            color: #8f9d9d;
+            text-align: center;
+            margin: auto;
+        }
+
+        .button {
+            margin: auto;
+            width: 50%;
+            padding: 30px;
+        }
+
+        #genText {
+            color: #8f9d9d;
+        }
+
+        .textContent {
+            text-align: center;
+            padding: 0px 10%;
+            white-space: pre-wrap;
+        }
+    </style>
+
+    <!-- TEXT GENERATOR SCRIPT! -->
+    <script type="text/javascript">
+        //Define the prefix and suffix to be joined together.
+        var prefix = ["anti", "de", "dis", "en", "em", "fore", "in", "im", "il", "ir", "inter", "mid", "mis", "non", "over", "pre", "re", "semi", "sub", "super", "trans", "un", "under"];
+        var suffix = ["able", "al", "ed", "en", "er", "est", "ful", "ic", "ing", "ion", "tion", "ity", "ty", "ive", "less", "ly", "ment", "ness", "ous", "es"];
+        var generatedWordArr = [];
+        var oneLetterWord = ["a", "I"];
+        var twoLetterWord = ["to", "an", "my", "is", "of", "if", "he", "be", "go", "no", "at"];
+        var threeLetterWord = ["the", "and", "she", "get", "let", "but", "yes", "are", "can", "out", "new", "how", "now", "who", "use", "too", "you"];
+        var paragraph = [];
+        var paragraphArr = [];
+        //Define random generator
+        function getRandomIntInclusive(min, max) {
+            var randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+            return randomNum;
+        }
+
+        //Chooses a one letter word, two letter word or three letter word. If more than three then a randomly generated word from the prefix and suffix array
+        //is chosen.
+        function generatedWord() {
+            var wordSize = getRandomIntInclusive(1, 10);
+            if (wordSize === 1) {
+                generatedWordArr.push(oneLetterWord[getRandomIntInclusive(0, oneLetterWord.length - 1)]);
+            } else if (wordSize === 2) {
+                generatedWordArr.push(twoLetterWord[getRandomIntInclusive(0, twoLetterWord.length - 1)]);
+            } else if (wordSize > 2 && wordSize <= 5) {
+                generatedWordArr.push(threeLetterWord[getRandomIntInclusive(0, threeLetterWord.length - 1)]);
+            } else {
+                var firstPart = prefix[getRandomIntInclusive(0, prefix.length - 1)];
+                var secondPart = suffix[getRandomIntInclusive(0, suffix.length - 1)];
+                var newWord = firstPart + secondPart;
+                generatedWordArr.push(newWord);
+            }
+            return generatedWordArr;
+        }
+
+        //Loops to combine the generated word into a sentence. If a word is duplicated ie. "a a" the function will delete than entry and form a new word.
+        //Also a comma is situated strategically between words to fomr simple grammar.
+        function generateSentence() {
+            var sentenceSize = getRandomIntInclusive(4, 8);
+            for (var i = 0; i <= sentenceSize; i++) {
+                generatedWord();
+                if (generatedWordArr[generatedWordArr.length - 2] === generatedWordArr[generatedWordArr.length - 1]) {
+                    generatedWordArr.splice(generatedWordArr.length - 1, 1);
+                }
+            }
+            if (getRandomIntInclusive(0, 2) === 2) {
+                var tempNum = getRandomIntInclusive(2, generatedWordArr.length - 2);
+                var commaChoice = generatedWordArr[tempNum].concat(",");
+                generatedWordArr.splice(tempNum, 1, commaChoice);
+            }
+            var sentence = generatedWordArr.join(" ") + ".";
+            var sentenceUpper = sentence.replace(sentence[0], sentence[0].toUpperCase());
+            generatedWordArr = [];
+            paragraph.push(sentenceUpper);
+            return paragraph;
+        }
+
+        // The generate sentence function is looped to create a paragraph.
+        function generateParagraph() {
+            var paragraphSize = getRandomIntInclusive(20, 30);
+            for (var j = 0; j <= paragraphSize; j++) {
+                generateSentence();
+            }
+            var paragraphText = paragraph.join(" ");
+            paragraphArr.push(paragraphText);
+            paragraph = [];
+            return paragraphArr;
+        }
+
+        //The paragraph function is looped to create a generated document.
+        function generateText() {
+            var textSize = getRandomIntInclusive(3, 5);
+            for (var m = 0; m <= textSize; m++) {
+                generateParagraph();
+            }
+            var text = paragraphArr.join("\n \n");
+            paragraphArr = [];
+            return text;
+        }
+
+        //DOM manipulation using jQuery. When a button is clicked the generate text function is called.
+        $(document).ready(function() {
+            $("button").on("click", function() {
+                $("#genText").text(generateText());
+            });
+        });
+    </script>
+
+    <title>Random Text Generator</title>
+</head>
+
+<body>
+    <div>
+        <h1 class="text">Random Text Generator</h1>
+        <h4 class="text">Click to generate random text.</h4>
+    </div>
+
+    <div class="button">
+        <button class="btn btn-primary center-block">Click Me!</button>
+    </div>
+
+    <div class="textContent">
+        <p id="genText"></p>
+    </div>
+</body>
+
+</html>
